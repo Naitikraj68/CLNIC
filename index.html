@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AN Fracture and Physiotherapy</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #splash {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+        #splash img {
+            max-width: 300px;
+            box-shadow: 0 0 20px white;
+        }
+    </style>
+</head>
+<body>
+    <div id="splash">
+        <img src="IMG_20250421_095030.jpg" alt="Clinic Logo">
+    </div>
+
+    <div id="main-content" style="display:none;">
+        <h1>Welcome to AN Fracture and Physiotherapy</h1>
+        <p>Contact: 7317770678, 7905563426</p>
+        <p>24x7 orthopedic fracture and physiotherapy care</p>
+        <a href="patient.php">I am a Patient</a>
+        <a href="doctor.php">Doctor Panel</a>
+        <a href="admin.php">Admin Panel</a>
+    </div>
+
+    <script>
+        setTimeout(() => {
+            document.getElementById('splash').style.display = 'none';
+            document.getElementById('main-content').style.display = 'block';
+        }, 3000);
+    </script>
+</body>
+</html>
